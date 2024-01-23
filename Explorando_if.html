@@ -8,12 +8,15 @@
 <body>
     <script>
         var idioma = prompt("Por favor digite o código do idioma (pt ou en)")
+        var variação = prompt("Digite a variação da lingua")
 
         //   pt   ==  pt  -> true 
-        if(idioma == "pt"){
+        if((idioma == "pt") && (variação == "br" || variação == "pt")){
             alert("Olá")
-        }else if(idioma == "en"){
+        }else if((idioma == "en") && (variação == "us") ){
             alert("Hi")
+        }else if((idioma == "en") && (variação == "gb") ){
+            alert("Hello")
         }else{
             alert("Idioma não reconhecido")
         }
